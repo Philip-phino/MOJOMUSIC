@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>search song</title>
+<link rel="icon" href="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+<link rel="stylesheet" type="text/css" th:href="@{/searchsong.css}"></link>
+</head>
+
+
+<body>
+<div class="a">
+	 <table border="1">
+            <tr>
+               
+                <th>SongName</th>
+                 <th>PlaySong</th>
+            </tr>
+            <tr>
+        		<td th:text="${songName}"></td>
+        		<td>
+        		<img id="logo" src= "https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" alt="Logo"> 
+        		<audio controls>
+        		<source th:src="${audioLink}">
+        		</audio></td>
+        	</tr>
+    </table>
+</div>
+</body>
+</html>

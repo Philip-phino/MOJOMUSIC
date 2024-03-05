@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="icon" href="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+<link rel="stylesheet" type="text/css" th:href="@{/login.css}"></link>
+</head>
+<body>
+<div class="img-container">
+<img  src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/ar%20ps.jpg?raw=true">
+</div>
+<div class="login-container">
+        <h2>Login</h2>
+<form class="login-form" action="/validate" method="post">
+<label for="email">Email:</label>
+        <input type="email" class="form-input"  name="email">
+		<br><br>
+        <label for="password">Password:</label>
+        <input type="password" class="form-input"   name="password" >	
+		<br><br>
+		 <button type="submit" class="login-button" value="LOGIN">LOGIN</button>
+		</form>
+		</div>
+	 
+</body>
+</html>

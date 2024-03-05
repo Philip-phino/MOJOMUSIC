@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="icon" href="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" th:href="@{/admin.css}"></link>
+</head>
+<body>
+    <header><br>
+        <h1>':.:':.Admin Page.:':.:'</h1>
+    </header>
+    <br><br>
+     <div class="container">
+        <div class="img-container">
+            <img src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/raja.jpg?raw=true" width="400" height="400"><br><br>
+        </div><br><br>
+       
+     <div class="links-container">
+            <form action="/addsong" method="post">
+                <button type="submit" class="styled-image-button">
+                    <img src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/button%20ps%204.jpg?raw=true" alt="Add Songs">
+                		<span>AddSongs</span>
+                </button>
+            </form><br><br>
+            <form action="/viewsong" method="Get">
+                <button type="submit" class="styled-image-button">
+                    <img src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/button%20ps3.jpg?raw=true" alt="View Songs">
+                		<span>Viewsongs</span>
+                </button>
+            </form><br><br>
+            <form action="/createplaylist" method="Get">
+                <button type="submit" class="styled-image-button">
+                    <img src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/button1%20ps.jpg?raw=true" alt="Create Playlist">
+                	<span>CreatePlaylist</span>
+                </button>
+            </form><br><br>
+            <form action="/viewplaylist" method="Get">
+                <button type="submit" class="styled-image-button">
+                    <img src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/button%20ps%202.jpg?raw=true" alt="View Playlist">
+                	<span>Viewplaylist</span>
+                </button>
+            </form>
+        </div>
+   		 </div>
+   
+    <br><br>
+    <footer>M-o-j-o-M-u-s-i-c</footer>
+</body>
+
+</html>

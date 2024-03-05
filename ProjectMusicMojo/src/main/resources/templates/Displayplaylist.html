@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Playlist</title>
+ <link rel="icon" href="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" th:href="@{/displayplaylist.css}"></link>
+</head>
+<body>
+
+<div class="table">
+		<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>PlaylistName</th>
+				<th>Songs</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="playlist:${playlist}">
+				<td th:text="${playlist.id}"></td>
+				<td th:text="${playlist.name}"></td>
+				<td>
+			     <ol class="playlist-songs">
+						<li th:each="playlist:${playlist.songs}"><br><span th:text="${playlist.name}"> </span><br>
+						<audio controls> 
+						<source th:src="${playlist.link}">
+						</audio></li>
+
+		        </ol>
+				</td>
+
+
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

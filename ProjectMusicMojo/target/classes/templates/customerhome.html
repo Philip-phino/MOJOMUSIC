@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Search Page</title>
+    <link rel="icon" href="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" th:href="@{/customerhome.css}"></link>
+</head>
+<body>
+
+ <header>
+        <form action="/playsong" method="Get">
+            <button type="submit" class="play-button" value="Play Songs">Play Songs</button>
+        </form>
+      
+        
+        <form action="logout">
+            <button type="submit" class="play-button" value="LOGOUT">Logout</button>
+        </form>
+    </header>
+  			 <div th:unless="${isIspremium}" class="non-premium">
+ 			<form action="/Pay">
+            <button type="submit" class="play-button" value="GET PREMIUM">Get premium</button>
+        </form>
+        <img src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+        </div>
+   			
+   			
+   			<div th:if="${isIspremium}" class="premium">
+		
+		 <div class="search-container">
+
+        <form action="/searchsong" method="Get">
+            <input type="text" name="search" class="search-bar" placeholder="Enter the song...">
+            <button class="search-button">Search</button>
+        </form>     </div>   
+        <br><br>
+       	
+
+   
+		 
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>SongName</th>
+                 <th>Genre</th>
+                <th>Artist</th>
+                 <th>Link</th>
+            </tr>
+        	<tr th:each="songs : ${songs}">
+					<td th:text="${songs.id}"></td>
+					<td th:text="${songs.name}"></td>
+					<td th:text="${songs.artist}"></td>
+					<td th:text="${songs.genre}"></td>
+					<td >
+        		<img id="logo" src= "https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" alt="Logo"> <!-- Replace with the actual path to your logo -->
+
+        		<audio controls>
+        		<source th:src="${songs.link}">
+        		</audio></td>
+        	</tr>
+    </table>
+		
+		</div>
+	
+
+</body>
+
+</html>

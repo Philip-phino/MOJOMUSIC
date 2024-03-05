@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the body height to full viewport height */
+}
+
+button {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    width: 200px; /* Adjust the width of the image buttons */
+    height: 200px; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Add rounded corners to the images */
+    text-align: center;
+}
+
+h1, p {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #2d2d2d;
+    color: #ff8c00;
+    padding: 0.5em;
+    box-shadow: 0 0 10px #ff8c00;
+}
+
+span {
+    display: block; /* Make the span a block element to control its dimensions */
+    text-align: center; /* Center text within the span */
+    margin-top: 0.2px; /* Adjust spacing between image and text */
+    font-size: 20px; /* Set the font size */
+    font-family: "Helvetica", sans-serif;
+    color: #ff8c00;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    padding-left: -10px;
+    padding-right: 50%;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio */
+}

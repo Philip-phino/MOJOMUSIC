@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.search-container {
+    margin-top: 300px;
+}
+
+.search-bar {
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+    background-color: rgb(255, 255, 255);
+    color: #495057;
+}
+
+.search-bar:focus {
+    background-color: #fff;
+}
+
+.search-button {
+    background-color: #ff8c00;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    color:white;
+    background-color: #363636;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 200px;
+}
+
+th {
+    background-color: #ff8c00;
+    color: black;
+}
+
+#logo {
+    margin-right: 10px; /* Adjust margin as needed */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+}
+
+
+header {
+    position: fixed;
+    box-shadow: 0 0 10px #ff8c00;
+    top: 0%;
+    padding:1em;
+    width: 100%;
+    background-color: #363636;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+.play-button {
+            background-color: #ff8c00;
+            color: black;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            justify-content:center;
+            margin-right: 50px; /* Adjust the margin as needed */
+        }
+
+        /* Style the logout button */
+        .play-button[value="LOGOUT"]:hover {
+            background-color: #ff302b;
+             transition: background-color 0.3s ease;
+             
+        }
+        .play-button[value="Play Songs"]:hover {
+            background-color: #e07703;
+             transition: background-color 0.3s ease;
+             
+        }
+        .play-button[value="GET PREMIUM"]:hover {
+            background-color: #e07703;
+             transition: background-color 0.3s ease;
+             
+        }
+      
+.playbutton1{
+	  background-color: #ff8c00;
+            color: black;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            justify-content:center;
+           
+	
+}
+p{
+	 position: fixed;
+    box-shadow: 0 0 10px #ff8c00;
+    top: 5%;
+    padding:1em;
+    width: 100%;
+    background-color: #363636;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}

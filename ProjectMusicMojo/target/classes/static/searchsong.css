@@ -1,0 +1,41 @@
+     
+       table {
+            border-collapse: collapse;
+            width: 70%;
+            
+          
+        }
+        a{
+         align-items: center;
+        }
+
+        th, td {
+            
+            text-align: center;
+            padding: 5px;
+            background-color: #363636;
+            padding: 5px;
+           
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);
+            width: 200px;
+      
+        }
+
+        th {
+            background-color:#ff8c00;
+            color:black;
+        }
+        
+        body {
+            background-color: #464646;
+            font-family: 'Arial', sans-serif;
+            color:white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }

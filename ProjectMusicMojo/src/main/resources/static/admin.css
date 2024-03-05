@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures that the content stretches to at least the height of the viewport */
+}
+
+header, footer {
+    text-align: center;
+    background-color: #2d2d2d;
+    color: #ff8c00;
+    padding: 0.5em;
+    box-shadow: 0 0 10px #ff8c00;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100%; /* Ensure the container takes the full height */
+}
+
+.img-container {
+    animation: moveFromLeft 2s ease-in-out; /* Added animation for moving from the left to the center */
+    padding-left: 40px;
+    padding-top: 20px;
+    /* Adjust as needed */
+}
+
+.links-container {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Align the buttons to the right */
+    padding-right: 150px;
+   padding-left:100px;
+    padding-bottom: 80px; /* Adjust as needed */
+    animation: moveFromRight 2s ease-in-out; /* Added animation for moving from the right to the center */
+}
+
+.styled-image-button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background: none;
+}
+
+.styled-image-button img {
+    width: 200px; /* Adjust the width of the image buttons */
+    height: 200px; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Add rounded corners to the images */
+    transition: transform 2s ease-in-out; /* Add smooth transition on hover */
+	
+}
+
+.styled-image-button span {
+    display: block; /* Make the span a block element to control its dimensions */
+    text-align: center; /* Center text within the span */
+    margin-top: 2.5px; /* Adjust spacing between image and text */
+    font-size: 20px; /* Set the font size */
+    font-family: "Helvetica", sans-serif;
+    color: #ff8c00;
+    font-weight: bold;
+    font-style: italic
+}
+
+.styled-image-button:hover img {
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+}
+
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

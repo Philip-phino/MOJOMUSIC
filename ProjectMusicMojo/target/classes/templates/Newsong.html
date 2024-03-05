@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>NEW SONG</title>
+<link rel="icon" href="https://github.com/Philip-phino/MOJOMUSIC/blob/main/logo%202.png?raw=true" type="image/x-icon">
+</head>
+  <link rel="stylesheet" type="text/css" th:href="@{/Newsong.css}"></link>
+<body>
+  <div class="img-container">
+<img  src="https://github.com/Philip-phino/MOJOMUSIC/blob/main/Mojo%20(1).png?raw=true">
+</div>
+<form action="/addsong" method="post">
+  <h2>ADD NEW SONG</h2>
+	 <label for="name">Song name:</label>
+        <input type="text"  name="name" >
+  		<br><br>
+        <label for="artist">Artist:</label>
+        <input type="artist" name="artist">
+		<br><br>
+        <label for="genre">Genre:</label>
+        <input type="genre"  name="genre" >	
+        <br><br>
+        <label for="link">Link:</label>
+        <input type="link"  name="link" >	
+		<br><br>
+		 <button type="submit">ADD SONG</button>
+			</form>
+</body>
+</html>

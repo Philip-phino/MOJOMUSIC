@@ -1,0 +1,109 @@
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2d2d2d;
+            color: #fff;           
+           display: flex;
+            align-items: center;
+            justify-content:space-between;
+            height: 100vh;
+            padding-right: 100px;
+           
+            
+        }
+
+        form {
+            background-color: #363636;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 500px;
+            margin-right:100px;
+            animation: moveFromBottom 2s ease-in-out;
+             box-shadow: 0 0 10px #ff8c00;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff8c00; /* Orange color */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #464646;
+            color: #fff;
+        }
+
+        button {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #cc7000;
+        }
+
+        /* Music player-themed styles */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #ff8c00;
+        }
+
+        button:active {
+            background-color: #ff8c00;
+            transform: scale(0.95);
+        }
+        .img-container {
+            padding-left:125px; /* Adjust the margin as needed for space */
+           animation: pulse 2s infinite;
+        }
+        
+        
+        img{
+         
+     		display: flex;
+			
+      		position: relative;
+     		 animation: fallFromTop  2s ease-in-out; 
+            justify-content: right;
+            width: 75%;
+          
+			  height: 75%;
+		    
+}
+	@keyframes fallFromTop {
+      0% { transform: translateY(-100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes moveFromBottom {
+      0% { transform: translateY(100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }

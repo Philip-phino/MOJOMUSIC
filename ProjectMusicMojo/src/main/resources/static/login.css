@@ -1,0 +1,105 @@
+body {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2d2d2d;
+            margin: 0;
+            padding-right:200px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            height: 100vh;     
+        }
+          input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #464646;
+            color: #fff;
+        }
+ 
+
+        .login-container {
+            background-color: #363636;
+            color: #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 500px;
+            text-align: center;
+             box-shadow: 0 0 10px #ff8c00;
+             animation: fallFromTop  2s ease-in-out; 
+           
+        }
+
+        .login-container h2 {
+             
+            text-align: center;
+            color: #ff8c00; /* Orange color */
+        
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .form-input {
+            margin: 10px 0;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .login-button {
+            background-color: #ff8c00;
+           
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+           background-color: #cc7000;
+        }
+     
+
+        .img-container {
+            padding-left:200px; /* Adjust the margin as needed for space */
+            overflow: hidden;
+             animation: moveFromBottom 2s ease-in-out;
+        }
+        
+        
+        img{
+           border-radius: 50px;
+    
+     		display: flex;
+            align-items: center;
+            justify-content: right;
+            width: 75%;
+			  height: auto;
+		    animation: slide 5s infinite alternate linear;
+}
+		@keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-25%);
+            }
+        }
+        @keyframes fallFromTop {
+      0% { transform: translateY(-100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes moveFromBottom {
+      0% { transform: translateY(100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+        
